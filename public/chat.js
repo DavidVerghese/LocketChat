@@ -4,6 +4,13 @@ socket.on('typing', function (data) {
     ` is typing a message... </em></p>`;
 });
 
+socket.on("chat", function (data) {
+  feedback.innerHTML = "";
+  output.innerHTML += `<p><strong>`
+    + data.handle + `:</strong>`
+    + data.message + `</p`;
+});
+
 
 // Query DOM 
 const message = document.getElementById('message');
