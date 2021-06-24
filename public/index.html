@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Sockets 101</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.3/socket.io.js"></script>
+  <link href="/styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>Locket</h1>
+    <img src="https://cdn4.iconfinder.com/data/icons/love-and-romance-27/80/necklace__heart__locket__love__romance-512.png"/>
+    <em><p>A dating app for the LGBT community</p></em>
+  </header>
+  <div id="mario-chat">
+    <div id="chat-window">
+      <div id="output"></div>
+      <div id="feedback"></div>
+    </div>
+    <input id="handle" type="text" placeholder="Handle"/>
+    <input id="message" type="text" placeholder="Message"/>
+    <button id="send">Send</button>
+  </div>
+  <script src="/chat.js"></script>
+</body>
+
+</html>
